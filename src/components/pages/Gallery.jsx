@@ -3,7 +3,7 @@ import React from "react";
 export default function Gallery() {
   return (
     <>
-      <div>Contact</div>
+      <div>Gallery</div>
     </>
   );
 }

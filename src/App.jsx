@@ -6,8 +6,6 @@ import Gallery from "./components/pages/Gallery";
 import Contact from "./components/pages/Contact";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <Router>
       <Routes>
