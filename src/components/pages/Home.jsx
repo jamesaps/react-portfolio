@@ -1,11 +1,10 @@
 import React from "react";
+import HomeJumbotron from "../HomeJumbotron";
 
 export default function Home() {
   return (
     <>
-      <h2>James Stott</h2>
-      <img src="" />
-
+      <HomeJumbotron />
     </>
   );
 }
