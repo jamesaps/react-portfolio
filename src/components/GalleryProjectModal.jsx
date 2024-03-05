@@ -12,6 +12,7 @@ export default function GalleryProjectModal({
     setSelectedProjectId(null);
   };
 
+  // motion divs encapsulate behaviour pertaining to animation provided by framer-motion library
   return (
     <>
       <motion.div className="gallery-project-modal-overlay w-100 h-100 position-absolute top-0 start-0 rounded-4">
