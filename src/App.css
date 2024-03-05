@@ -65,9 +65,18 @@ main {
 }
 
 .gallery-project-modal-close {
+  color: #0745ff;
   top: 20px;
   right: 20px;
   cursor: pointer;
+}
+
+.gallery-project-modal-link {
+  color: #0745ff;
+}
+
+.gallery-project-modal-link:hover {
+  color: #07ffc1;
 }
 
 /* Contact */
