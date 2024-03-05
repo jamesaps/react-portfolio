@@ -15,11 +15,14 @@ export default function GalleryProjectCard({
       }
     >
       <motion.div className="card h-100 gallery-project-card">
-        <motion.div
-          className="card-img-top gallery-project-card-image"
-          style={{ backgroundImage: `url(${project.img.src})` }}
-          layoutId={`image-${project.id}`}
-        ></motion.div>
+        <div className="p-2">
+          <motion.div
+            className="card-img-top gallery-project-card-image"
+            style={{ backgroundImage: `url(${project.img.src})` }}
+            layoutId={`image-${project.id}`}
+          ></motion.div>
+        </div>
+
         <motion.div className="card-body gallery-project-card-body">
           <motion.h5 className="card-title" layoutId={`title-${project.id}`}>
             {project.title}

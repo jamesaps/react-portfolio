@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { useState } from "react";
 import galleryProjectData from "./../../assets/projects.json";
 import GalleryProjectCard from "../GalleryProjectCard";
@@ -7,6 +7,19 @@ import { AnimatePresence, LayoutGroup } from "framer-motion";
 
 export default function Gallery() {
   const [selectedProjectId, setSelectedProjectId] = useState(null);
+  const modalRef = useRef(null);
+
+  const scrollToModal = () =>
+    modalRef.current.scrollIntoView({
+      behavior: "auto",
+      block: "center",
+      inline: "center",
+    });
+
+  useEffect(() => {
+    if (modalRef.current !== null) scrollToModal();
+  }, [selectedProjectId]);
+
   const selectedProject =
     selectedProjectId !== null &&
     galleryProjectData.find(
@@ -16,9 +29,7 @@ export default function Gallery() {
   return (
     <>
       <div className="container mb-5">
-        <h1 className="display-5 fw-bold text-body-emphasis text-center my-5">
-          Gallery
-        </h1>
+        <h1 className="display-5 fw-bold text-center my-5">Gallery</h1>
 
         <div className="position-relative pt-3">
           <LayoutGroup>
@@ -38,6 +49,7 @@ export default function Gallery() {
                 <GalleryProjectModal
                   project={selectedProject}
                   setSelectedProjectId={setSelectedProjectId}
+                  modalRef={modalRef}
                 />
               </AnimatePresence>
             )}

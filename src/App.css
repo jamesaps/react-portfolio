@@ -59,3 +59,7 @@ main {
 .footer-border {
   border-top: 1px solid #0745ff !important;
 }
+
+h1 {
+  color: #0745ff !important;
+}
