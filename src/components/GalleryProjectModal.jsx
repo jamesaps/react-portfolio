@@ -3,7 +3,11 @@ import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 
-export default function GalleryProjectModal({ project, setSelectedProjectId }) {
+export default function GalleryProjectModal({
+  project,
+  setSelectedProjectId,
+  modalRef,
+}) {
   const handleClose = () => {
     setSelectedProjectId(null);
   };
@@ -13,6 +17,7 @@ export default function GalleryProjectModal({ project, setSelectedProjectId }) {
       <motion.div className="gallery-project-modal-overlay w-100 h-100 position-absolute top-0 start-0 rounded-4">
         <motion.div
           layoutId={`${project.id}`}
+          ref={modalRef}
           className="card shadow-lg position-absolute w-75 p-3 top-50 start-50 translate-middle rounded-3"
         >
           <motion.div

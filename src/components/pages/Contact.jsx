@@ -4,7 +4,8 @@ import ContactForm from "../ContactForm";
 
 export default function Contact() {
   const [formSubmitted, setFormSubmitted] = useState(false);
-  const [smile, setSmile] = useState(":)");
+  const [bellePicture, setBellePicture] = useState(2);
+  const [formErrors, setFormErrors] = useState([]);
   const [userData, setUserData] = useState({
     firstName: "",
     lastName: "",
@@ -16,15 +17,39 @@ export default function Contact() {
     e.preventDefault();
     console.log(userData);
 
-    if (userData.firstName !== "") {
-      setFormSubmitted(() => true);
+    validateForm();
+  };
+
+  const validateForm = () => {
+    const validationErrors = [];
+
+    if (userData.firstName === "") {
+      validationErrors.push("First name cannot be blank.");
     }
+
+    if (userData.lastName === "") {
+      validationErrors.push("Last name cannot be blank.");
+    }
+
+    if (userData.email === "") {
+      validationErrors.push("Email cannot be blank.");
+    }
+
+    if (userData.message === "") {
+      validationErrors.push("Message cannot be blank.");
+    }
+
+    if (validationErrors.length === 0) {
+      setFormSubmitted(true);
+    }
+
+    setFormErrors(validationErrors);
   };
 
   return (
     <>
       <div className="container mb-5">
-        <h1 className="col-12 display-5 fw-bold text-body-emphasis text-center my-5">
+        <h1 className="col-12 display-5 fw-bold text-center my-5">
           Contact Me
         </h1>
 
@@ -41,10 +66,19 @@ export default function Contact() {
             />
             <div
               className="col-md-6 d-none d-md-flex flex-column justify-content-center align-items-center"
-              onMouseEnter={() => setSmile("(:")}
-              onMouseLeave={() => setSmile(":)")}
+              onMouseEnter={() => setBellePicture(1)}
+              onMouseLeave={() => setBellePicture(2)}
             >
-              <h3>{smile}</h3>
+              <div className="position-relative">
+                <img
+                  src={`belle-${bellePicture}.jpg`}
+                  style={{ maxWidth: "100%", maxHeight: "300px" }}
+                  className="rounded-3"
+                />
+                <h3 className="position-absolute top-0 w-100 mt-3 text-center text-white">
+                  Hover Belle to get her attention!
+                </h3>
+              </div>
             </div>
           </div>
         ) : (
@@ -53,6 +87,16 @@ export default function Contact() {
           </p>
         )}
       </div>
+
+      {formErrors.length > 0 && (
+        <div className="container text-danger">
+          <ul>
+            {formErrors.map((error, index) => (
+              <li key={index}>{error}</li>
+            ))}
+          </ul>
+        </div>
+      )}
     </>
   );
 }

@@ -6,13 +6,12 @@ import Home from "./components/pages/Home";
 import Gallery from "./components/pages/Gallery";
 import Contact from "./components/pages/Contact";
 import Footer from "./components/Footer";
-import "./App.css";
 
 function App() {
   return (
     <Router>
       <Navigation />
-      <main>
+      <main className="position-relative">
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="gallery" element={<Gallery />}></Route>

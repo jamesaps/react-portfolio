@@ -11,7 +11,9 @@ export default function Navigation(props) {
           <NavLink
             to="/"
             className={({ isActive }) =>
-              isActive ? "nav-link active" : "nav-link"
+              isActive
+                ? "nav-link nav-item current-nav-item"
+                : "nav-link nav-item"
             }
           >
             Home
@@ -21,7 +23,9 @@ export default function Navigation(props) {
           <NavLink
             to="gallery"
             className={({ isActive }) =>
-              isActive ? "nav-link active" : "nav-link"
+              isActive
+                ? "nav-link nav-item current-nav-item"
+                : "nav-link nav-item"
             }
           >
             Gallery
@@ -31,7 +35,9 @@ export default function Navigation(props) {
           <NavLink
             to="contact"
             className={({ isActive }) =>
-              isActive ? "nav-link active" : "nav-link"
+              isActive
+                ? "nav-link nav-item current-nav-item"
+                : "nav-link nav-item"
             }
           >
             Contact

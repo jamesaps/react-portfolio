@@ -2,6 +2,52 @@ main {
   flex: 1;
 }
 
+/* Navigation */
+.nav-item {
+  color: #0745ff;
+}
+.nav-item:hover,
+.nav-item:focus {
+  color: #fff930 !important;
+}
+
+.current-nav-item {
+  background-color: #0745ff;
+  color: #07ffc1;
+}
+
+.current-nav-item:hover,
+.current-nav-item:focus {
+}
+
+/* HomeJumbotron */
+#home-jumbotron {
+  background-color: #0745ff !important;
+}
+
+#home-jumbotron h1 {
+  color: #07ffc1 !important;
+}
+
+.welcome-text {
+  color: #0745ff !important;
+}
+
+.gallery-button {
+  background-color: #0745ff !important;
+  color: #07ffc1 !important;
+}
+
+.contact-me-button {
+  border-color: #0745ff !important;
+  color: #0745ff !important;
+}
+
+.jumbotron-link {
+  background-color: #0745ff !important;
+  color: #07ffc1 !important;
+}
+
 /* GalleryProjectCard */
 .gallery-project-card {
   cursor: pointer;
@@ -24,6 +70,12 @@ main {
   cursor: pointer;
 }
 
+/* Contact */
+.contact-submit-button {
+  background-color: #fff930 !important;
+  color: #0745ff !important;
+}
+
 /* Footer */
 .social-media-icon {
   color: #0745ff;
@@ -31,4 +83,12 @@ main {
 
 .social-media-icon:hover {
   color: #c107ff;
+}
+
+.footer-border {
+  border-top: 1px solid #0745ff !important;
+}
+
+h1 {
+  color: #0745ff !important;
 }
