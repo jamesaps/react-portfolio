@@ -14,7 +14,11 @@ export default function HomeJumbotron() {
         <div className="col-12 col-sm-8 d-flex flex-column justify-content-center">
           <p className="welcome-text col-lg-8 mx-auto fs-5">
             Welcome to my web development portfolio. Please take some time to
-            view all of my proudest creations in the Gallery.
+            view all of my proudest creations in the{" "}
+            <Link to="gallery" className="jumbotron-link rounded-5 p-1 text-decoration-none">
+              Gallery
+            </Link>{" "}
+            .
           </p>
         </div>
 

@@ -25,6 +25,11 @@ main {
   color: #0745ff !important;
 }
 
+.jumbotron-link {
+  background-color: #0745ff !important;
+  color: #07ffc1 !important;
+}
+
 /* GalleryProjectCard */
 .gallery-project-card {
   cursor: pointer;
