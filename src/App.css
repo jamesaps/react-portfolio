@@ -2,6 +2,29 @@ main {
   flex: 1;
 }
 
+/* HomeJumbotron */
+#home-jumbotron {
+  background-color: #0745ff !important;
+}
+
+#home-jumbotron h1 {
+  color: #07ffc1 !important;
+}
+
+.welcome-text {
+  color: #0745ff !important;
+}
+
+.gallery-button {
+  background-color: #0745ff !important;
+  color: #07ffc1 !important;
+}
+
+.contact-me-button {
+  border-color: #0745ff !important;
+  color: #0745ff !important;
+}
+
 /* GalleryProjectCard */
 .gallery-project-card {
   cursor: pointer;
@@ -31,4 +54,8 @@ main {
 
 .social-media-icon:hover {
   color: #c107ff;
+}
+
+.footer-border {
+  border-top: 1px solid #0745ff !important;
 }
