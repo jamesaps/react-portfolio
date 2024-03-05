@@ -20,9 +20,9 @@ export default function Gallery() {
           Gallery
         </h1>
 
-        <div className="position-relative">
+        <div className="position-relative pt-3">
           <LayoutGroup>
-            <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-3">
+            <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
               {galleryProjectData.map((galleryProject) => (
                 <GalleryProjectCard
                   project={galleryProject}

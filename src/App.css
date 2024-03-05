@@ -23,3 +23,12 @@ main {
   right: 20px;
   cursor: pointer;
 }
+
+/* Footer */
+.social-media-icon {
+  color: #0745ff;
+}
+
+.social-media-icon:hover {
+  color: #c107ff;
+}
