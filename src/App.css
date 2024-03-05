@@ -47,6 +47,12 @@ main {
   cursor: pointer;
 }
 
+/* Contact */
+.contact-submit-button {
+  background-color: #fff930 !important;
+  color: #0745ff !important;
+}
+
 /* Footer */
 .social-media-icon {
   color: #0745ff;

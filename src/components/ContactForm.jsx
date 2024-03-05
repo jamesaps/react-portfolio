@@ -79,7 +79,7 @@ export default function ContactForm({
 
         {/* Submit */}
         <div className="col-12 text-end">
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="contact-submit-button btn">
             Submit
           </button>
         </div>
