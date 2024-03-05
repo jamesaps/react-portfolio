@@ -12,6 +12,7 @@ export default function GalleryProjectModal({
     setSelectedProjectId(null);
   };
 
+  // motion divs encapsulate behaviour pertaining to animation provided by framer-motion library
   return (
     <>
       <motion.div className="gallery-project-modal-overlay w-100 h-100 position-absolute top-0 start-0 rounded-4">
@@ -46,6 +47,23 @@ export default function GalleryProjectModal({
             >
               <motion.h3>Description</motion.h3>
               <motion.div>{project.description}</motion.div>
+
+              <div class="d-flex justify-content-around mt-3">
+                {project.repo !== null && (
+                  <a href={project.repo} className="gallery-project-modal-link">
+                    Repository
+                  </a>
+                )}
+
+                {project.deployed !== null && (
+                  <a
+                    href={project.deployed}
+                    className="gallery-project-modal-link"
+                  >
+                    Live
+                  </a>
+                )}
+              </div>
             </motion.div>
           </motion.div>
         </motion.div>

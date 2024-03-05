@@ -8,8 +8,8 @@
     "shortDescription": "User friendly travel application to support users in finding the ideal hotel in their specified holiday destination.",
     "description": "This user-friendly application serves as the ultimate guide, offering a comprehensive overview of highly recommended hotels at the user's chosen destination. Beyond this, it seamlessly connects the user to local restaurants, bars, pubs, entertainment and cultural spaces and activities conveniently situated within close proximity to their selected hotel. There is additionally a map feature for effortless navigation to these spaces.",
     "id": 1,
-    "deployed": "",
-    "live": ""
+    "deployed": "https://adam-deb.github.io/project-1/",
+    "repo": "https://github.com/Adam-deb/project-1"
   },
   {
     "title": "Weather Dashboard",
@@ -20,8 +20,8 @@
     "shortDescription": "Simple and elegant weather forecasting tool to allow users to search for a region in the world and get the current and forecasted weather conditions in that region.",
     "description": "Weather Dashboard is a weather forecasting application that allows users to search for the weather in regions all over the world. Users are cleanly presented details of the current weather along with a 5-day forecast for the following days. The site is designed to be responsive and uses images to make checking the weather a pleasant and visually engaging experience.",
     "id": 2,
-    "deployed": "",
-    "live": ""
+    "deployed": "https://jamesaps.github.io/weather-dashboard/",
+    "repo": "https://github.com/jamesaps/weather-dashboard"
   },
   {
     "title": "Bootstrap Web Design Portfolio",
@@ -32,8 +32,8 @@
     "shortDescription": "A Bootstrap single page application to give users a view of the web design projects I have undertaken.",
     "description": "This is a continuation and reimagination of a previous project page with Bootstrap 5.3.2 as the underlying framework responsible for ensuring responsiveness. The site uses semantic HTML elements where possible and achieves responsiveness and a clean and organised layout through the use of Bootstrap where possible, but makes infrequent use of media queries where native Bootstrap is not capable of solving a certain problem.",
     "id": 3,
-    "deployed": "",
-    "live": ""
+    "deployed": "https://jamesaps.github.io/bootstrap-portfolio/",
+    "repo": "https://github.com/jamesaps/bootstrap-portfolio"
   },
   {
     "title": "Password Generator",
@@ -44,8 +44,8 @@
     "shortDescription": "A highly customizable, easy-to-use and elegant secure password generation tool in a simple user interface.",
     "description": "This is a password generation tool that offers some useful customisation options. Users can specify how long they desire their generated password to be with meaningful feedback when values provided are errenous or not within the stipulated 8-128 characters. Users can also specify what types of characters they wish to include of: lowercase, uppercase, numeric and special. Meaningful feedback is provided along the way and at least one category must be selected in order for the user to progress to the password generation stage.",
     "id": 4,
-    "deployed": "",
-    "live": ""
+    "deployed": "https://jamesaps.github.io/password-generator/",
+    "repo": "https://github.com/jamesaps/password-generator"
   },
   {
     "title": "Work Day Scheduler",
@@ -56,8 +56,8 @@
     "shortDescription": "A simple calendar application that allows users to plan their days according to an hourly schedule.",
     "description": "Work Day Scheduler is a simple calendar application that allows a user to save events for each hour of the day. The app runs in a browser and features dynamically updated HTML and CSS powered by jQuery.",
     "id": 5,
-    "deployed": "",
-    "live": ""
+    "deployed": "https://jamesaps.github.io/work-day-scheduler/",
+    "repo": "https://github.com/jamesaps/work-day-scheduler"
   },
   {
     "title": "Team Profile Generator",
@@ -68,7 +68,7 @@
     "shortDescription": "A command line tool that allows users to input details of their team and outputs this as a website displaying the team.",
     "description": "This application takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. The output of this tool is an styled HTML page detailing the members of the team who were specified in the team generation stage.",
     "id": 6,
-    "deployed": "",
-    "live": ""
+    "deployed": null,
+    "repo": "https://github.com/jamesaps/team-profile-generator"
   }
 ]
