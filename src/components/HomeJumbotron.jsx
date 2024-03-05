@@ -11,26 +11,11 @@ export default function HomeJumbotron() {
         <h1 className="display-3 fw-bold">James Stott's Portfolio</h1>
       </div>
       <div className="row mt-3 p-2">
-        <div className="col-12 col-sm-8 d-flex flex-column justify-content-between">
+        <div className="col-12 col-sm-8 d-flex flex-column justify-content-center">
           <p className="welcome-text col-lg-8 mx-auto fs-5">
-            Welcome to my web development portfolio. Please take the time to
+            Welcome to my web development portfolio. Please take some time to
             view all of my proudest creations in the Gallery.
           </p>
-
-          <div className="d-inline-flex justify-content-between align-items-end">
-            <Link
-              to="gallery"
-              className="gallery-button d-inline-flex align-items-center btn btn-lg px-4"
-            >
-              Gallery
-            </Link>
-            <Link
-              to="contact"
-              className="contact-me-button btn btn-lg px-4"
-            >
-              Contact Me
-            </Link>
-          </div>
         </div>
 
         <div className="col-12 col-sm-4 order-first order-sm-last d-flex align-items-center justify-content-center">
