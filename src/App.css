@@ -3,7 +3,7 @@ main {
 }
 
 /* GalleryProjectCard */
-.gallery-project-image {
+.gallery-project-card-image {
   height: 300px !important;
   background-size: cover;
   background-position: top;
