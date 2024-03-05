@@ -4,7 +4,7 @@ import ContactForm from "../ContactForm";
 
 export default function Contact() {
   const [formSubmitted, setFormSubmitted] = useState(false);
-  const [smile, setSmile] = useState(":)");
+  const [bellePicture, setBellePicture] = useState(2);
   const [formErrors, setFormErrors] = useState([]);
   const [userData, setUserData] = useState({
     firstName: "",
@@ -66,10 +66,19 @@ export default function Contact() {
             />
             <div
               className="col-md-6 d-none d-md-flex flex-column justify-content-center align-items-center"
-              onMouseEnter={() => setSmile("(:")}
-              onMouseLeave={() => setSmile(":)")}
+              onMouseEnter={() => setBellePicture(1)}
+              onMouseLeave={() => setBellePicture(2)}
             >
-              <h3>{smile}</h3>
+              <div className="position-relative">
+                <img
+                  src={`belle-${bellePicture}.jpg`}
+                  style={{ maxWidth: "100%", maxHeight: "300px" }}
+                  className="rounded-3"
+                />
+                <h3 className="position-absolute top-0 w-100 mt-3 text-center text-white">
+                  Hover Belle to get her attention!
+                </h3>
+              </div>
             </div>
           </div>
         ) : (
