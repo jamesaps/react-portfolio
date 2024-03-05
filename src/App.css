@@ -2,6 +2,24 @@ main {
   flex: 1;
 }
 
+/* Navigation */
+.nav-item {
+  color: #0745ff;
+}
+.nav-item:hover,
+.nav-item:focus {
+  color: #fff930 !important;
+}
+
+.current-nav-item {
+  background-color: #0745ff;
+  color: #07ffc1;
+}
+
+.current-nav-item:hover,
+.current-nav-item:focus {
+}
+
 /* HomeJumbotron */
 #home-jumbotron {
   background-color: #0745ff !important;
