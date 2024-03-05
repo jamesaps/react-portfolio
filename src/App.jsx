@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <Navigation />
-      <main>
+      <main className="position-relative">
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="gallery" element={<Gallery />}></Route>
