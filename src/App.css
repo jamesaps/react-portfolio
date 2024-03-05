@@ -1,3 +1,25 @@
 main {
   flex: 1;
 }
+
+/* GalleryProjectCard */
+.gallery-project-card {
+  cursor: pointer;
+}
+
+.gallery-project-card-image {
+  height: 300px !important;
+  background-size: cover;
+  background-position: top;
+}
+
+/* GalleryProjectModal */
+.gallery-project-modal-overlay {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.gallery-project-modal-close {
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
