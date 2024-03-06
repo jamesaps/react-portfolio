@@ -6,7 +6,7 @@
 
 This is my latest Portfolio. Created using React, Bootstrap and Framer Motion, it boasts a responsive and colorful design to create interest and making navigating through its gallery of development accomplishments a delight! This single page application runs smoothly, with tasteful animations and interactivity sprinkled through to demonstrate some of the wonders of web development using these modern technologies.
 
-You can view the deployed version of this portfolio [here](https://main--genuine-jelly-60da5d.netlify.app/gallery)
+You can view the deployed version of this portfolio [here](https://main--genuine-jelly-60da5d.netlify.app/)
 
 ![Project Screenshot](./src/assets/project-screenshot.png)
 
