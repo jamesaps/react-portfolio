@@ -21,7 +21,7 @@ You can view the deployed version of this portfolio [here](https://main--genuine
 
 ## Installation
 
-This project can be used by cloning the repository git clone https://github.com/jamesaps/react-portfolio.git and can be used out of the box by running node index.js from the command line in the project directory.
+This project can be used by cloning the repository git clone https://github.com/jamesaps/react-portfolio.git and can be used out of the box by running npm i from the command line in the project directory.
 
 ## Contributing
 
